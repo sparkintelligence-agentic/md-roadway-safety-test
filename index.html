@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maryland Roadway Safety Practice Test</title>
+<style>
+:root{--bg:#f4f6fb;--card:#fff;--ink:#1d2433;--muted:#5d6678;--brand:#2b59c3;--ok:#1f9d55;--okbg:#e7f7ee;--bad:#d64545;--badbg:#fdeceb;--line:#e3e7ef}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}
+.wrap{max-width:720px;margin:0 auto;padding:16px}
+header{text-align:center;padding:18px 8px 6px}
+header h1{font-size:1.45rem;margin:0 0 4px}
+header p{margin:0;color:var(--muted);font-size:.95rem}
+.card{background:var(--card);border-radius:16px;box-shadow:0 2px 10px rgba(20,30,60,.07);padding:20px;margin:14px 0}
+.btn{display:inline-block;border:0;border-radius:12px;padding:13px 18px;font-size:1rem;font-weight:600;cursor:pointer;background:var(--brand);color:#fff;margin:4px 4px 4px 0}
+.btn.secondary{background:#eef2fb;color:var(--brand)}
+.btn:disabled{opacity:.45;cursor:default}
+.top{display:flex;justify-content:space-between;font-size:.9rem;color:var(--muted);margin-bottom:8px}
+.bar{height:10px;background:var(--line);border-radius:6px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--brand);width:0;transition:width .3s}
+.topic{display:inline-block;font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--brand);background:#eef2fb;border-radius:20px;padding:3px 10px;margin:14px 0 6px}
+.q{font-size:1.13rem;font-weight:600;margin:4px 0 14px}
+.opt{display:block;width:100%;text-align:left;background:#fff;border:2px solid var(--line);border-radius:12px;padding:13px 14px;margin:8px 0;font-size:1rem;cursor:pointer;color:var(--ink)}
+.opt:hover:not(:disabled){border-color:var(--brand)}
+.opt:disabled{cursor:default}
+.opt.correct{border-color:var(--ok);background:var(--okbg)}
+.opt.wrong{border-color:var(--bad);background:var(--badbg)}
+.fb{border-radius:12px;padding:14px;margin-top:12px}
+.fb.ok{background:var(--okbg);border-left:5px solid var(--ok)}
+.fb.no{background:var(--badbg);border-left:5px solid var(--bad)}
+.fb h3{margin:0 0 6px;font-size:1.05rem}
+.fb.ok h3{color:var(--ok)} .fb.no h3{color:var(--bad)}
+.fb p{margin:6px 0}
+.rem{background:#fff8e1;border-radius:10px;padding:9px 12px;margin-top:8px;font-weight:600}
+details{background:#fff;border-radius:12px;border:1px solid var(--line);padding:4px 14px;margin:8px 0}
+summary{cursor:pointer;font-weight:700;padding:10px 0}
+.kc ul{padding-left:20px;margin:6px 0 12px} .kc li{margin:4px 0}
+.score{font-size:2.6rem;font-weight:800;text-align:center;margin:6px 0}
+.center{text-align:center}
+.miss{border-top:1px solid var(--line);padding:12px 0}
+.miss b{display:block}
+.small{font-size:.85rem;color:var(--muted)}
+.sources a{color:var(--brand);word-break:break-word}
+.hidden{display:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>🚗 Maryland Roadway Safety Practice Test</h1>
+  <p>For the MVA 3-Hour Roadway Safety Driving Education Program · 30 questions</p>
+</header>
+
+<div id="start" class="card">
+  <p>Hi Suma! 👋 This practice test covers Maryland alcohol &amp; drug laws and safe-driving rules. After each answer you'll see right away if you got it right, and if not, <b>why</b>, plus a short rule to remember.</p>
+  <p class="small">Tip: read the Key Concepts first, then take the test. Aim for <b>27/30 or better</b> before your real exam.</p>
+  <details class="kc">
+    <summary>📘 Key concepts (open to study first)</summary>
+    <b>Alcohol &amp; BAC</b>
+    <ul>
+      <li><b>0.08</b> BAC or higher = Driving Under the Influence (DUI).</li>
+      <li><b>0.07</b> BAC = evidence of Driving While Impaired (DWI). You can be charged below 0.08.</li>
+      <li><b>Under 21</b>: no alcohol allowed. 0.02 or more violates the alcohol restriction.</li>
+      <li><b>0.04</b> = limit when driving a commercial vehicle.</li>
+      <li>One standard drink = <b>12 oz beer</b> (about 5%) = <b>5 oz wine</b> = <b>1.5 oz 80-proof liquor</b>.</li>
+      <li>The body removes about <b>one standard drink per hour</b>. Only <b>time</b> sobers you up. Coffee, cold showers, and food don't.</li>
+      <li><b>Refusing</b> a breath/blood test: license suspended <b>270 days</b> (1st), <b>2 years</b> (2nd or more).</li>
+      <li>Test at 0.08 or higher: 180-day suspension (1st offense).</li>
+      <li>Open container of alcohol in the <b>passenger area</b> (seats and anywhere within reach) is illegal. Put it in the trunk.</li>
+      <li>Convicted of drunk/drugged driving with a <b>child in the car</b>: the judge can <b>double</b> the fine and jail time.</li>
+    </ul>
+    <b>Drugs &amp; cannabis</b>
+    <ul>
+      <li>Cannabis is legal for adults 21+, but <b>driving impaired by it is illegal</b>, same as alcohol.</li>
+      <li>A driver may not smoke or consume cannabis in the passenger area (misdemeanor, 1 point).</li>
+      <li>Prescription and over-the-counter drugs: obey "do not drive" warning labels. You can be charged if they impair you.</li>
+    </ul>
+    <b>Points system (any 2-year period)</b>
+    <ul>
+      <li>3–4 points: warning letter · <b>5–7</b>: Driver Improvement Program · <b>8–11</b>: suspension notice · <b>12+</b>: revocation notice.</li>
+    </ul>
+    <b>Phones &amp; distraction</b>
+    <ul>
+      <li>Adults: no handheld phone use while driving (only to start/end a call or turn the phone on/off). Primary offense, so police can stop you just for that. Texting is banned.</li>
+      <li>Under 18: no phone at all while driving, <b>even hands-free</b>, except to call 911.</li>
+    </ul>
+    <b>Sharing the road</b>
+    <ul>
+      <li><b>Move Over</b>: for <b>any</b> stopped vehicle showing hazard lights, flares, cones, or emergency lights, move to a lane not next to it, or slow down if you can't.</li>
+      <li><b>School bus</b> with flashing red lights: stop at least <b>20 feet</b> away, in both directions, unless a physical median divides the road. Yellow flashing = slow down, get ready to stop.</li>
+      <li>Stop for pedestrians in <b>marked or unmarked</b> crosswalks. Never pass a car stopped at a crosswalk.</li>
+      <li>Pass bicycles by at least <b>3 feet</b>.</li>
+      <li>Emergency vehicle with siren/lights: pull to the right edge, stop, and wait until it passes.</li>
+    </ul>
+    <b>Belts &amp; kids</b>
+    <ul>
+      <li><b>Everyone</b> in the car must wear a seat belt.</li>
+      <li>Children <b>under 8</b> need a car seat or booster unless they are <b>4'9"</b> or taller. Under 2 ride rear-facing (up to the seat's limits).</li>
+    </ul>
+    <b>Safe driving</b>
+    <ul>
+      <li>Following distance: at least <b>3–4 seconds</b> in ideal conditions, more in bad weather or behind buses.</li>
+      <li>Hydroplaning: <b>ease off the gas, don't brake, steer straight</b>.</li>
+      <li>Drowsy: the only real fix is <b>rest or switch drivers</b>.</li>
+      <li>Aggressive drivers: don't compete or engage. Let them go.</li>
+      <li>Four-way stop, arriving together: yield to the driver on your <b>right</b>. Turning left: yield to oncoming traffic.</li>
+      <li>Speed limit = the max in <b>ideal</b> conditions. Slow down for rain, curves, traffic.</li>
+      <li>Work zones: flashing <b>amber/yellow</b> = workers present; flashing <b>blue</b> = active speed cameras. Slow down.</li>
+    </ul>
+  </details>
+  <div class="center" style="margin-top:12px"><button class="btn" onclick="startQuiz(allQ())">Start the test ▶</button></div>
+</div>
+
+<div id="quiz" class="card hidden">
+  <div class="top"><span id="prog"></span><span id="run"></span></div>
+  <div class="bar"><i id="barfill"></i></div>
+  <div id="topic" class="topic"></div>
+  <div id="qtext" class="q"></div>
+  <div id="opts"></div>
+  <div id="fb"></div>
+  <div style="margin-top:14px;text-align:right"><button id="next" class="btn" disabled onclick="next()">Next ▶</button></div>
+</div>
+
+<div id="result" class="card hidden"></div>
+
+<div class="card sources small">
+  <b>Sources</b>
+  <ul>
+    <li><a href="https://mva.maryland.gov/licenses-ids/driver-education-safety/roadway-safety-driving-education-program" target="_blank" rel="noopener">MVA – Roadway Safety Driving Education Program</a></li>
+    <li><a href="https://mva.maryland.gov/drivers/Pages/3-hour-RSDEP-bulletins-all.aspx" target="_blank" rel="noopener">MVA – 3 Hour RSDEP bulletins</a></li>
+    <li><a href="https://mva.maryland.gov/media/148/download" target="_blank" rel="noopener">Maryland Driver's Manual (MVA)</a></li>
+    <li><a href="https://mva.maryland.gov/your-mva-guide/drivers-revoked-or-suspended-licenses/drivers-license-points" target="_blank" rel="noopener">MVA – Driver's License Points</a></li>
+    <li><a href="https://mva.maryland.gov/your-mva-guide/drivers-revoked-or-suspended-licenses/driving-under-influence-dui" target="_blank" rel="noopener">MVA – Driving Under the Influence</a></li>
+    <li><a href="https://regs.maryland.gov/us/md/exec/comar/11.11.03.11" target="_blank" rel="noopener">COMAR 11.11.03.11 – Test refusal suspension</a></li>
+    <li><a href="https://regs.maryland.gov/us/md/exec/comar/11.17.15.02" target="_blank" rel="noopener">COMAR 11.17.15.02 – Under-21 alcohol restriction</a></li>
+    <li><a href="https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtr&section=21-1124.2" target="_blank" rel="noopener">MD Transp. §21-1124.2 – Handheld phones</a> · <a href="https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtr&section=21-1124" target="_blank" rel="noopener">§21-1124 – Under 18</a></li>
+    <li><a href="https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtr&section=21-405" target="_blank" rel="noopener">MD Transp. §21-405 – Move Over</a></li>
+    <li><a href="https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtr&section=21-706" target="_blank" rel="noopener">MD Transp. §21-706 – School buses</a></li>
+    <li><a href="https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtr&enactments=false&section=21-1209" target="_blank" rel="noopener">MD Transp. §21-1209 – 3-foot bicycle rule</a></li>
+    <li><a href="https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtr&section=22-412.2" target="_blank" rel="noopener">MD Transp. §22-412.2 – Child safety seats</a></li>
+    <li><a href="https://www.niaaa.nih.gov/alcohols-effects-health/what-standard-drink" target="_blank" rel="noopener">NIAAA – What is a standard drink?</a></li>
+  </ul>
+  <p>This is a study aid, not the official exam. The MVA doesn't publish the course exam. Your course provider sets the passing score.</p>
+</div>
+</div>
+
+<script>
+const Q = [
+{t:"Alcohol",q:"At what blood alcohol concentration (BAC) is an adult driver considered Driving Under the Influence (DUI) in Maryland?",o:["0.08 or higher","0.10 or higher","0.05 or higher","0.12 or higher"],e:"Maryland treats a BAC of 0.08 or higher as driving under the influence. Even below that, alcohol can still impair you and you can be charged.",r:"0.08 = DUI."},
+{t:"Alcohol",q:"A BAC of 0.07 in Maryland is evidence of which offense?",o:["Driving While Impaired (DWI)","Nothing, it's under the legal limit","Reckless driving only","Only a warning"],e:"0.07 is evidence of Driving While Impaired by alcohol (DWI). Being under 0.08 does not mean you are safe or legal. DWI carries 8 points on your record.",r:"0.07 = DWI. Under 0.08 is NOT automatically legal."},
+{t:"Alcohol",q:"A driver under 21 is stopped with a BAC of 0.02. What happens?",o:["They violate the under-21 alcohol restriction and can lose their license","Nothing, because it's far below 0.08","Only a fine for the passenger","It's legal if they are 20"],e:"Drivers under 21 have an alcohol restriction: no alcohol allowed while driving. 0.02 or more is a violation, and the license can be suspended or revoked.",r:"Under 21 = zero alcohol (0.02 is a violation)."},
+{t:"Alcohol",q:"What is the alcohol limit for someone driving a commercial motor vehicle?",o:["0.04","0.08","0.02","0.10"],e:"Commercial drivers are held to a stricter standard. A test of 0.04 or more while driving a commercial vehicle disqualifies the CDL.",r:"Commercial vehicle = 0.04."},
+{t:"Alcohol",q:"In Maryland, if you refuse a breath or blood test for the first time, how long is your license suspended?",o:["270 days","30 days","90 days","No suspension if you aren't convicted"],e:"Under Maryland's implied consent law, refusing the test brings an administrative suspension of 270 days for a first refusal and 2 years for a second. It's longer than the 180 days for testing 0.08–0.14, so refusing doesn't help you.",r:"Refuse = 270 days (1st), 2 years (2nd)."},
+{t:"Alcohol",q:"Which of these contains about the SAME amount of alcohol as 12 oz of regular beer?",o:["5 oz of wine or 1.5 oz of 80-proof liquor","12 oz of wine","A pint (16 oz) of liquor mixed in a drink","3 oz of 80-proof liquor"],e:"One standard drink = 12 oz of regular beer (about 5%) = 5 oz of wine (about 12%) = 1.5 oz of 80-proof liquor. Each has about the same alcohol. Beer is not 'weaker' per drink.",r:"12 oz beer = 5 oz wine = 1.5 oz liquor."},
+{t:"Alcohol",q:"What is the ONLY thing that lowers your BAC after drinking?",o:["Time, about one standard drink per hour","Drinking black coffee","Taking a cold shower","Eating a big meal after drinking"],e:"Your liver removes alcohol at a fixed rate, about one standard drink per hour. Coffee, showers, or food after drinking may make you feel more awake, but your BAC stays the same.",r:"Only TIME sobers you up."},
+{t:"Alcohol",q:"Where can an opened bottle of wine be legally carried while you drive?",o:["In the trunk","In the cup holder if the cork is pushed back in","On the back seat","Under the passenger seat"],e:"An open container is illegal in the passenger area, meaning the seats and any place the driver or passengers can easily reach. The trunk is outside the passenger area.",r:"Open alcohol goes in the trunk, never within reach."},
+{t:"Alcohol",q:"If you are convicted of drunk or drugged driving with a child in your vehicle, what can the judge do?",o:["Double your fine and jail time","Nothing extra","Only give you a warning","Reduce the penalty if the child was buckled"],e:"The Maryland Driver's Manual says a judge can double the fine and jail time when a child was in the vehicle during a drunk or drugged driving offense.",r:"Child in the car = penalties can double."},
+{t:"Drugs",q:"Cannabis is legal for adults 21+ in Maryland. Which statement is TRUE?",o:["Driving while impaired by cannabis is still illegal","You can drive after using it if you feel fine","It's legal for the driver to use it while stopped at a light","Cannabis doesn't affect driving"],e:"Legal to buy does not mean legal to drive impaired. Cannabis slows reaction time and judgment, and impaired driving laws apply. A driver also may not smoke or consume cannabis in the passenger area (a misdemeanor plus 1 point).",r:"Legal to use ≠ legal to drive high."},
+{t:"Drugs",q:"Your prescription label says 'May cause drowsiness. Do not operate machinery.' What should you do?",o:["Don't drive until you know it won't impair you","Drive since it's a legal prescription","Drive only on highways","Drink coffee and then drive"],e:"A legal prescription is not a defense. If a medicine impairs your driving, you can be charged with a criminal offense. Always read the warnings on prescription and over-the-counter drugs.",r:"Prescription ≠ permission to drive impaired."},
+{t:"Points",q:"How many points on your Maryland record (within 2 years) require you to attend a Driver Improvement Program?",o:["5 points","2 points","10 points","15 points"],e:"MVA actions over any 2-year period: 3–4 points = warning letter, 5–7 = Driver Improvement Program, 8–11 = suspension notice, 12 or more = revocation notice.",r:"3 warn · 5 class · 8 suspend · 12 revoke."},
+{t:"Points",q:"At how many points will the MVA send a notice of REVOCATION?",o:["12 or more","8","5","20"],e:"12 or more points within 2 years leads to a revocation notice. 8–11 points brings a suspension notice. Revocation is more serious than suspension.",r:"12 points = revocation."},
+{t:"Phones",q:"Which phone use is allowed for an adult driver in Maryland while the car is moving?",o:["Hands-free calling, only touching the phone to start or end a call","Holding the phone to your ear for a short call","Reading a text at a red light","Typing a text if you look up often"],e:"Adults may not use their hands to use a handheld phone while driving, except to start or end a call or turn the phone on/off. Hands-free calls are allowed. It's a primary offense, so police can stop you just for that. Texting is banned.",r:"Hands-free only. No holding, no texting."},
+{t:"Phones",q:"A 17-year-old driver wants to use a hands-free phone while driving. Is that allowed?",o:["No, under 18 can't use any phone while driving except to call 911","Yes, hands-free is always legal","Yes, if a parent is on the call","Yes, but only on highways"],e:"Drivers under 18 may not use any wireless device while driving, even hands-free. The only exception is calling 911. The MVA can suspend their license for up to 90 days.",r:"Under 18 = no phone at all (except 911)."},
+{t:"Sharing the road",q:"You approach a car stopped on the shoulder with its hazard lights flashing. What does Maryland's Move Over law require?",o:["Move to a lane not next to it if safe; if you can't, slow down","Nothing, it only applies to police cars","Honk and keep your speed","Stop completely in your lane"],e:"Since October 2022, Maryland's Move Over law covers ANY stopped vehicle showing hazard lights, flares, or caution signals like cones, as well as emergency, tow, and service vehicles. Move to a lane not next to it if you safely can. Otherwise slow to a safe speed.",r:"See flashing lights on the shoulder → move over or slow down."},
+{t:"School bus",q:"A school bus stops ahead of you with flashing RED lights and its stop arm out. What must you do?",o:["Stop at least 20 feet away and wait until the lights stop and the bus moves","Pass slowly if no children are visible","Stop 5 feet away","Honk so the children know you're coming"],e:"Maryland law requires you to stop at least 20 feet from the bus and stay stopped until the red lights turn off and the bus starts moving. If a police officer stops you, the fine can be up to $570 plus 3 points.",r:"Red lights = STOP 20 feet back."},
+{t:"School bus",q:"You're driving the opposite way from a stopped school bus with red lights flashing. The road is split by a grass median. What do you do?",o:["You may continue with caution","You must stop","Stop only if children are on your side","Speed up to get past quickly"],e:"In Maryland, drivers going the opposite direction do not have to stop if a physical median (grass, dirt, concrete, or guardrail) divides the road. Drivers going the same way as the bus must ALWAYS stop. Without a physical median, everyone stops.",r:"Physical median + opposite direction = may proceed carefully."},
+{t:"School bus",q:"A school bus ahead turns on flashing YELLOW lights. What does that mean?",o:["It's preparing to stop. Slow down and get ready to stop.","You must stop immediately","It's okay to pass quickly","The bus is broken down"],e:"Flashing yellow means the bus is about to stop to load or unload children. Slow down and be ready to stop when the red lights come on.",r:"Yellow = get ready. Red = stop."},
+{t:"Pedestrians",q:"At an intersection with no traffic signal, a pedestrian is crossing where there are no painted lines. What should you do?",o:["Stop. Most intersections have an unmarked crosswalk.","Keep going because it's not a marked crosswalk","Honk to warn them","Drive around them"],e:"Where there's no traffic signal, you must stop for pedestrians in a marked OR unmarked crosswalk. Most intersections have a crosswalk even without painted lines. Also, never pass a vehicle stopped at a crosswalk, since someone may be crossing in front of it.",r:"Unmarked crosswalks count. Stop for people walking."},
+{t:"Bicycles",q:"When you pass a bicyclist, how much space does Maryland law require (when the road allows)?",o:["At least 3 feet","At least 1 foot","At least 10 feet","No set distance"],e:"Maryland requires drivers to pass a bicycle, scooter, or similar device at a distance of at least 3 feet. Bicyclists also have the right-of-way in a bike lane or on the shoulder when you cross it.",r:"Give bikes 3 feet."},
+{t:"Seat belts",q:"Who must wear a seat belt in Maryland?",o:["The driver and all passengers, front and back","Only the driver","Only front-seat passengers","Only passengers under 16"],e:"Maryland law requires everyone in the vehicle to be buckled. Rear-seat violations are a secondary offense (enforced only after a stop for something else), but they're still required.",r:"Everyone buckles up, every seat."},
+{t:"Child safety",q:"A 6-year-old child is 4 feet tall. How must they ride?",o:["In a car seat or booster seat","Seat belt only is fine","In the front seat with a belt","On an adult's lap"],e:"Maryland law requires children under 8 to ride in a car seat or booster seat unless they are 4 feet 9 inches or taller. Children under 2 should ride rear-facing until they reach the seat's limits.",r:"Under 8 and under 4'9\" = car seat or booster."},
+{t:"Safe driving",q:"What following distance does the MVA recommend as a MINIMUM in ideal conditions?",o:["3 to 4 seconds","1 second","One car length for every 50 mph","Half a second"],e:"The MVA recommends at least 3–4 seconds behind the car ahead in ideal conditions. Pick a sign or bridge, count 'one thousand-one...' as the car ahead passes it, and add more time in bad weather or behind buses and trucks (4–5+ seconds). Most rear-end crashes come from following too closely.",r:"Count 3–4 seconds, more in bad conditions."},
+{t:"Safe driving",q:"Your car starts hydroplaning on a wet road. What should you do?",o:["Ease off the gas, don't brake, and keep steering straight","Slam on the brakes","Speed up to get through the water","Turn the wheel sharply"],e:"Hydroplaning means your tires are riding on water and lose grip. Take your foot off the gas, don't brake, and keep the car going straight until the tires grip again. To prevent it, slow down on wet roads and keep your tires in good shape.",r:"Hydroplane: off the gas, no brakes, steer straight."},
+{t:"Safe driving",q:"You keep yawning and drift out of your lane. What is the BEST action?",o:["Pull over safely to rest or switch drivers","Turn up the radio","Open the window and keep going","Drink an energy drink and continue"],e:"Yawning, drifting from your lane, heavy eyes, and missing exits are danger signs. Drowsiness slows reaction time and judgment much like alcohol does. Radio, cold air, or caffeine don't fix it. Rest or let someone else drive.",r:"Drowsy? Rest or switch drivers."},
+{t:"Safe driving",q:"An aggressive driver is tailgating you and flashing their lights. What should you do?",o:["Stay calm, don't engage, and let them pass when safe","Brake suddenly to teach them a lesson","Speed up to match them","Make eye contact and gesture"],e:"Don't compete with aggressive drivers. Stay calm, let them go by, and focus on your own safe driving. Allow extra time for trips so you don't feel rushed yourself.",r:"Don't compete. Let them go."},
+{t:"Right-of-way",q:"At a four-way stop, you and another car arrive at the same time. The other car is on your right. Who goes first?",o:["The car on your right","You do","Whoever is bigger","Whoever honks first"],e:"The driver who arrives first goes first. If two drivers arrive at the same time, yield to the driver on your right. When turning left, yield to oncoming traffic.",r:"Tie at a 4-way stop → car on the RIGHT goes."},
+{t:"Speed",q:"The posted speed limit is 55 mph, but it's raining heavily. What speed is legal and safe?",o:["Slower than 55, a speed safe for the conditions","Exactly 55 mph","Up to 60 mph to keep up with traffic","Any speed if you have good tires"],e:"The posted limit is the maximum under ideal conditions. Maryland law requires a speed that's reasonable for the conditions, so in rain, fog, curves, or heavy traffic you should go slower. Speeding is one of the most common causes of crashes.",r:"Speed limit = max in perfect conditions."},
+{t:"Work zones",q:"In a Maryland work zone, what do flashing BLUE lights mean?",o:["Speed cameras are active","Road is closed","Police chase in progress","You may speed up"],e:"In work zones, flashing amber/yellow lights mean workers are present, and flashing blue lights mean speed cameras are active. Slow down, obey the signs and flaggers, and expect sudden stops. Fines can be much higher in work zones.",r:"Orange signs = slow down. Blue lights = cameras on."}
+];
+
+let order=[],idx=0,score=0,missed=[],answered=false;
+const $=id=>document.getElementById(id);
+function shuffle(a){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+function allQ(){return Q.map((_,i)=>i);}
+function startQuiz(list){
+  order=shuffle(list).map(i=>{const q=Q[i];const opts=shuffle(q.o.map((t,k)=>({t,ok:k===0})));return {i,q,opts};});
+  idx=0;score=0;missed=[];
+  $('start').classList.add('hidden');$('result').classList.add('hidden');$('quiz').classList.remove('hidden');
+  show();window.scrollTo(0,0);
+}
+function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;');}
+function show(){
+  answered=false;const it=order[idx];
+  $('prog').textContent=`Question ${idx+1} of ${order.length}`;
+  $('run').textContent=`Score: ${score}/${idx}`;
+  $('barfill').style.width=(idx/order.length*100)+'%';
+  $('topic').textContent=it.q.t;
+  $('qtext').textContent=it.q.q;
+  $('fb').innerHTML='';
+  $('next').disabled=true;
+  $('next').textContent=idx===order.length-1?'See results ▶':'Next ▶';
+  const box=$('opts');box.innerHTML='';
+  it.opts.forEach((o,k)=>{const b=document.createElement('button');b.className='opt';b.textContent=String.fromCharCode(65+k)+'. '+o.t;b.onclick=()=>pick(k);box.appendChild(b);});
+}
+function pick(k){
+  if(answered)return;answered=true;
+  const it=order[idx];const btns=$('opts').children;
+  const ci=it.opts.findIndex(o=>o.ok);
+  for(const b of btns)b.disabled=true;
+  btns[ci].classList.add('correct');
+  const correctTxt=it.opts[ci].t;
+  if(it.opts[k].ok){
+    score++;
+    $('fb').innerHTML=`<div class="fb ok"><h3>✅ Correct!</h3><p>${esc(it.q.e)}</p><div class="rem">💡 Remember: ${esc(it.q.r)}</div></div>`;
+  }else{
+    btns[k].classList.add('wrong');
+    missed.push({q:it.q,your:it.opts[k].t,correct:correctTxt,i:it.i});
+    $('fb').innerHTML=`<div class="fb no"><h3>❌ Not quite</h3><p><b>Your answer:</b> ${esc(it.opts[k].t)}</p><p><b>Correct answer:</b> ${esc(correctTxt)}</p><p><b>Why:</b> ${esc(it.q.e)}</p><div class="rem">💡 Remember: ${esc(it.q.r)}</div></div>`;
+  }
+  $('run').textContent=`Score: ${score}/${idx+1}`;
+  $('barfill').style.width=((idx+1)/order.length*100)+'%';
+  $('next').disabled=false;
+  $('fb').scrollIntoView({behavior:'smooth',block:'nearest'});
+}
+function next(){if(!answered)return;idx++;if(idx<order.length){show();window.scrollTo(0,0);}else finish();}
+function finish(){
+  $('quiz').classList.add('hidden');
+  const n=order.length,pct=Math.round(score/n*100);
+  let msg;
+  if(n===30&&score>=27)msg="🎉 Excellent! You're ready. Keep reviewing anything you missed.";
+  else if(pct>=90)msg="🎉 Great job on these!";
+  else if(pct>=75)msg="👍 Good progress. Review the misses below and try again. Aim for 27/30+.";
+  else msg="📚 Keep going! Re-read the Key Concepts and retry the ones you missed.";
+  let h=`<div class="center"><h2 style="margin:0">Your score</h2><div class="score">${score} / ${n}</div><div>${pct}%</div><p>${msg}</p><p class="small">Practice goal: 27/30 or better. The real passing score is set by your course provider, so ask them.</p>`;
+  if(missed.length)h+=`<button class="btn" onclick="startQuiz(missedIdx())">Retry missed only (${missed.length})</button>`;
+  h+=`<button class="btn secondary" onclick="startQuiz(allQ())">Retake all (shuffled)</button></div>`;
+  if(missed.length){
+    h+=`<h3 style="margin-top:22px">Questions you missed</h3>`;
+    missed.forEach((m,j)=>{h+=`<div class="miss"><b>${j+1}. ${esc(m.q.q)}</b><p>❌ You chose: ${esc(m.your)}<br>✅ Correct: ${esc(m.correct)}</p><p>${esc(m.q.e)}</p><div class="rem">💡 ${esc(m.q.r)}</div></div>`;});
+  }else h+=`<p class="center">Perfect score, no misses! 🌟</p>`;
+  $('result').innerHTML=h;$('result').classList.remove('hidden');window.scrollTo(0,0);
+}
+let lastMissed=[];
+function missedIdx(){return missed.map(m=>m.i);}
+</script>
+</body>
+</html>
